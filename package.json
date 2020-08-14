@@ -1,0 +1,36 @@
+{
+  "name": "relocate",
+  "version": "1.0.0",
+  "description": "Plataforma de Pesquisa de Vagas para Desenvolvedores",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/teodorojo/projeto_relocate.git"
+  },
+  "keywords": [
+    "dev",
+    "developer",
+    "frontend",
+    "fullstack",
+    "relocate"
+  ],
+  "author": "João Teodoro",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/teodorojo/projeto_relocate/issues"
+  },
+  "homepage": "https://github.com/teodorojo/projeto_relocate#readme",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.7.6",
+    "sequelize": "^6.3.4",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}
