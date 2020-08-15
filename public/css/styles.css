@@ -7,6 +7,7 @@ body {
 
 button {
     font-size: larger; 
+    cursor: pointer;
 }
 
 input {
@@ -80,14 +81,14 @@ input::placeholder {
 
 .container-img {
     margin: 0 auto;
-    height: 30rem;
+    height: 28rem;
     background-color:#252525;
     
-    background-image: url(/public/assets/frame.svg);
+    background-image: url("/public/assets/teste.png");
 }
 
 .title-desc{
-    padding-top: 6rem;
+    padding-top: 4rem;
     display: flex;
     justify-content: center;
     color: #F1F1F1;
@@ -96,7 +97,7 @@ input::placeholder {
 }
 
 .find {
-    margin-top: 10rem;
+    margin-top: 8rem;
     display: flex;
     justify-content: center;
 }
@@ -108,3 +109,79 @@ input::placeholder {
     border: #F1F1F1;
     color: #F1F1F1
 }
+
+.new:hover {
+    background-color: #003328;
+    color: #63C3B2;
+    border: 2px solid #63C3B2; 
+}
+
+.selection {
+    font-size: 2rem;
+    color: #252525;
+    margin: 1rem 0 2rem 12rem;
+}
+
+.company {
+    margin: 0 12rem 2rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #63C3B2;
+    height: 10rem;
+    background-color: #FFFFFF;
+}
+
+.img-company {
+    border: 2px solid #003328;
+    height: 8rem;
+    margin-left: -3rem;
+    border-radius: 30%;
+}
+
+.info-vaga {
+    margin-left: -45rem;
+}
+
+.name-company {
+    margin: -1rem 0 1rem 0;
+    font-size: larger;
+}
+
+.vaga {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.salary {
+    font-style: italic;
+}
+
+.more {
+    background-color: #003328;
+    color: #F1F1F1;
+    margin-right: 2rem;
+    padding: 0.6rem;
+    border: none;
+}
+
+.more:hover {
+    background-color: #63C3B2;
+    color: #F1F1F1;
+}
+
+.footer {
+    background-color: #003328;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    align-items: center;
+}
+
+.logo-footer {
+    height: 3rem;
+    margin-right: 1rem;
+}
+
+
