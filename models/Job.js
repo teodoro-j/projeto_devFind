@@ -1,16 +1,16 @@
 const Sequelize = require('sequelize');
 const db = require('../db/connection');
 
-const Job = db.define('job', {
+const Job = db.define('jobs', {
     // id: {
     //     type: Sequelize.INTEGER,
     // },
     title: {
         type: Sequelize.STRING,
     },
-    description: {
-        type: Sequelize.STRING,
-    },
+    // description: {
+    //     type: Sequelize.STRING,
+    // },
     salary: {
         type: Sequelize.STRING,
     },
