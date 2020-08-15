@@ -1,11 +1,29 @@
 body {
+    height: 100vh;
     margin: 0 auto;
     background-color: #F1F1F1;
 }
 
 button {
-    padding: 1rem;
     font-size: larger; 
+}
+
+input {
+    height: 2rem;
+    width: 45rem;
+    /* margin-right: 1rem; */
+    /* border: 2px solid #003328; */
+}
+
+span {
+    margin-top: 5rem;
+    font-size: 1.4rem;
+}
+
+input::placeholder {
+    padding-left: 0.6rem;
+    font-size: larger;
+    color: #003328;
 }
 
 .header {
@@ -13,11 +31,11 @@ button {
     justify-content: space-between;
     align-items: center;
     background-color: #003328;
-    height: 7rem;
+    height: 5rem;
 }
 
 .logo {
-    height: 7rem;
+    height: 5rem;
 }
 
 .buttons-header {
@@ -29,6 +47,7 @@ button {
     color: #F1F1F1;
     background-color: #003328;
     margin-right: 2rem;
+    padding: 0.6rem;
 }
 
 .ver-vagas:hover {
@@ -44,7 +63,8 @@ button {
 .abrir-vagas {
     border: 1px solid #63C3B2;
     color: #63C3B2;
-    background-color: #003328
+    background-color: #003328;
+    padding: 0.6rem;
 }
 
 .abrir-vagas:hover {
@@ -55,4 +75,35 @@ button {
     color: #63C3B2;
     background-color: #003328;
     transition: 2s;
+}
+
+.container-img {
+    margin: 0 auto;
+    height: 30rem;
+    background-color:#252525;
+    
+    background-image: url(/public/assets/frame.svg);
+}
+
+.title-desc{
+    padding-top: 6rem;
+    display: flex;
+    justify-content: center;
+    color: #F1F1F1;
+    margin-left: -1rem;
+    font-size: 3rem;
+}
+
+.find {
+    margin-top: 10rem;
+    display: flex;
+    justify-content: center;
+}
+
+.new {
+    width: 7rem;
+    height: 2.4rem;
+    background-color: #63C3B2;
+    border: #F1F1F1;
+    color: #F1F1F1
 }
