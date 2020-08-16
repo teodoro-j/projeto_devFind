@@ -18,13 +18,17 @@ input {
 }
 
 span {
+    background-color: rgb(184, 34, 34);
+    color: #F1F1F1;
+    padding: 0.4rem;
     margin-top: 5rem;
     font-size: 1.4rem;
+    margin: 0 -33rem 0 5rem;
 }
 
 input::placeholder {
     padding-left: 0.6rem;
-    font-size: larger;
+    font-style: italic;
     color: #003328;
 }
 
@@ -44,7 +48,7 @@ input::placeholder {
     margin-right: 2.8rem;  
 }
 
-.ver-vagas {
+.ver-job {
     border: 1px solid #F1F1F1;
     color: #F1F1F1;
     background-color: #003328;
@@ -52,7 +56,7 @@ input::placeholder {
     padding: 0.6rem;
 }
 
-.ver-vagas:hover {
+.ver-job:hover {
     border-bottom: 2px solid #F1F1F1;
     border-top: none;
     border-left: none;
@@ -62,14 +66,14 @@ input::placeholder {
     transition: 2s;
 }
 
-.abrir-vagas {
+.abrir-job {
     border: 1px solid #63C3B2;
     color: #63C3B2;
     background-color: #003328;
     padding: 0.6rem;
 }
 
-.abrir-vagas:hover {
+.abrir-job:hover {
     border-bottom: 2px solid #63C3B2;
     border-top: none;
     border-left: none;
@@ -111,9 +115,9 @@ input::placeholder {
 }
 
 .new:hover {
-    background-color: #003328;
-    color: #63C3B2;
-    border: 2px solid #63C3B2; 
+    background-color: #0aeec4;
+    color: #003328;
+
 }
 
 .selection {
@@ -132,6 +136,16 @@ input::placeholder {
     background-color: #FFFFFF;
 }
 
+.company-new-job {
+    margin: 0 12rem 2rem 12rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #F1F1F1;
+    height: 10rem;
+    background-color:#0aeec4 ;
+}
+
 .img-company {
     border: 2px solid #003328;
     height: 8rem;
@@ -139,22 +153,26 @@ input::placeholder {
     border-radius: 30%;
 }
 
-.info-vaga {
-    margin-left: -45rem;
+.info-job {
+    margin-left: -40rem;
 }
 
-.name-company {
-    margin: -1rem 0 1rem 0;
+.info-job-new {
+    margin-left: -30.7rem;
+}
+
+p {
+    margin: -0.5rem 0 1rem 0;
     font-size: larger;
 }
 
-.vaga {
+h1 {
     font-size: 2rem;
-    margin-bottom: 1rem;
 }
 
 .salary {
-    font-style: italic;
+    font-style: italic; 
+    margin-top: 1rem;
 }
 
 .more {
@@ -166,8 +184,8 @@ input::placeholder {
 }
 
 .more:hover {
-    background-color: #63C3B2;
-    color: #F1F1F1;
+    color: #f1f1f1;
+    background-color: #0d836d;
 }
 
 .footer {
