@@ -3,8 +3,12 @@ const router = express.Router();
 const Job = require('../models/Job');
 
 router.get('/test', (req, res) => {
-    res.send('deu certo')
+    res.send('deu certo');
 });
+
+router.get('/add', (req, res) => {
+    res.render('add');
+})
 
 router.post('/add', (req, res) => {
     

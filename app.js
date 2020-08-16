@@ -1,9 +1,10 @@
 const express = require('express');
-const exphbs = require('express-handlebars');
+const exphbs = require('express-handlebars'); // dando erro
 const app = express();
 const path = require('path');
 const db = require('./db/connection');
 const bodyParser = require('body-parser');
+const Job = require('./models/Job');
 
 const PORT = 3000;
 
@@ -17,6 +18,8 @@ app.set('views', path.join(__dirname, 'views'));
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
 app.set('view engine', 'handlebars');
 
+app.use(express.static(path.join(__dirname, 'public')));
+
 db
   .authenticate()
   .then(() => {
@@ -27,7 +30,14 @@ db
   });
 
 app.get('/', (req,res) => {
-    res.send("Está funcionando");
+    Job.findAll({order: [
+        ['createdAt', 'DESC']
+    ]})
+    .then(jobs => {
+        res.render('index', {
+            jobs
+        });
+    });
 });
 
 app.use('/jobs', require('./routes/jobs'));
