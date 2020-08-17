@@ -21,15 +21,15 @@
 {{/if}}
 <ul class="search">
     {{#each jobs}}
-    <li class="company-new-job {{#if dataValue.new-job}}company-new-job{{/if}}">
+    <li class="company-new-job" name="{{#if dataValue.new_job}}company-new-job{{/if}}">
         <img class="img-company" src="/assets/teste.png" alt="Company">
         <div class="info-job-new">
             <p>{{dataValues.company}}</p>
-            <h1>{{dataValues.company}}</h1>
+            <h1>{{dataValues.title}}</h1>
             <div class="salary">{{dataValues.salary}}</div>
         </div>
         <span class="new-job">Nova</span>
-        <button class="more">Ver Vaga</button>
+        <a href="/jobs/view/:id" class="more">Ver Vaga</a>
     </li>
     <li class="company-job">
         <img class="img-company" src="/assets/teste.png" alt="Company">
@@ -38,7 +38,7 @@
             <h1>{{dataValues.company}}</h1>
             <div class="salary">R${{dataValues.salary}}</div>
         </div>
-        <button class="more">Ver Vaga</button>
+        <a href="/jobs/view/:id" class="more">Ver Vaga</a>
     </li>
     {{/each}}
 </ul>

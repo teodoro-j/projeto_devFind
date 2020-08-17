@@ -62,5 +62,4 @@ app.get('/', (req, res) => {
 });
 
 
-
 app.use('/jobs', require('./routes/jobs'));
