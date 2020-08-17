@@ -1,51 +1,44 @@
 <div class="container-img">
     <div class="title-desc">
-        Não seja escolhido, Escolha!
-        <!-- <span>Somos um site com mais vagas de tecnologia</span> -->
+        Não seja escolhido...
     </div>
-    <div class="find">
-        <input type="text" placeholder="Digite a vaga que esta buscando">
-        <button class="new">Buscar</button>
+    <div class="subtitle">
+        Escolha!
     </div>
+
+    <form action="/" method="GET">
+        <div class="find">
+            <input type="text" name="job" placeholder="Digite a vaga que esta buscando">
+            <button class="new">Buscar</button>
+        </div>
+    </form>
 </div>
 
-<div class="selection">Veja nossas vagas em destaque</div>
+{{#if search}}
+    <div class="selection">Buscando Vagas que contem: {{ search }}</div>
+{{else}}
+    <div class="selection">Veja nossas vagas em destaque</div>
+{{/if}}
 <ul class="search">
-    <li class="company-new-job">
+    {{#each jobs}}
+    <li class="company-new-job {{#if dataValue.new-job}}company-new-job{{/if}}">
         <img class="img-company" src="/assets/teste.png" alt="Company">
         <div class="info-job-new">
-            <p>Easynvest</p>
-            <h1>Dev Pleno</h1>
-            <div class="salary">R$ 6.0000</div>
+            <p>{{dataValues.company}}</p>
+            <h1>{{dataValues.company}}</h1>
+            <div class="salary">{{dataValues.salary}}</div>
         </div>
         <span class="new-job">Nova</span>
         <button class="more">Ver Vaga</button>
     </li>
     <li class="company-job">
         <img class="img-company" src="/assets/teste.png" alt="Company">
-        <div class="info-job">
-            <p>Easynvest</p>
-            <h1>Dev Pleno</h1>
-            <div class="salary">R$ 6.0000</div>
+        <div class="info-job-new">
+            <p>{{dataValues.company}}</p>
+            <h1>{{dataValues.company}}</h1>
+            <div class="salary">R${{dataValues.salary}}</div>
         </div>
         <button class="more">Ver Vaga</button>
     </li>
-    <li class="company-job">
-        <img class="img-company" src="/assets/teste.png" alt="Company">
-        <div class="info-job">
-            <p>Easynvest</p>
-            <h1>Dev Pleno</h1>
-            <div class="salary">R$ 6.0000</div>
-        </div>
-        <button class="more">Ver Vaga</button>
-    </li>
-    <li class="company-job">
-        <img class="img-company" src="/assets/teste.png" alt="Company">
-        <div class="info-job">
-            <p>Easynvest</p>
-            <h1>Dev Pleno</h1>
-            <div class="salary">R$ 6.0000</div>
-        </div>
-        <button class="more">Ver Vaga</button>
-    </li>
+    {{/each}}
 </ul>
