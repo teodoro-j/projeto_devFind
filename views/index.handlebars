@@ -36,9 +36,9 @@
         <div class="info-job-new">
             <p>{{dataValues.company}}</p>
             <h1>{{dataValues.company}}</h1>
-            <div class="salary">R${{dataValues.salary}}</div>
+            <div class="salary">R${{dataValues.salary}},00</div>
         </div>
-        <a href="/jobs/view/:id" class="more">Ver Vaga</a>
+        <a href="/jobs/view/{{dataValues.id}}" class="more">Ver Vaga</a>
     </li>
     {{/each}}
 </ul>
